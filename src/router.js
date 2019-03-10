@@ -43,5 +43,10 @@ export default new Router({
       beforeEnter: onlyAuthUser,
       component: ()=> import("./views/Mypage.vue")
       },
+      {
+        path: "/notice-board",
+        name: "notice-board",
+        component: ()=> import("./views/Notice-Board.vue")
+        },
   ]
 });

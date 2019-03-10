@@ -30,6 +30,14 @@
             <v-list-tile-title>마이페이지</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile router :to="{name: 'notice-board'}" exact>
+          <v-list-tile-action>
+            <v-icon>contact_mail</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>게시판</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="indigo" dark fixed app>
@@ -45,7 +53,6 @@
           flat
           icon
         >
-        <v-icon>more_vert</v-icon>
           {{userInfo.name}}
         </v-btn>
       <v-list>
